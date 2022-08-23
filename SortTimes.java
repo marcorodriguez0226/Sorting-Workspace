@@ -21,6 +21,7 @@ public class SortTimes {
         long insertionSortTime = 0;
         long mergeSortTime = 0;
         long quickSortTime = 0;
+        long heapSortTime = 0;
 
         System.out.println("Sorted ascending dataset");
         for (int arraysz = 10; arraysz < MAXARRAYSIZE; arraysz *= 10) {
