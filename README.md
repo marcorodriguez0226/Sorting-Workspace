@@ -1,4 +1,4 @@
-INTRODUCTION
+## INTRODUCTION
 
 The core of this assignment involves no programming. You are to download the java files from the 
 canvas module for the sixth week, load them into a project and run them. The files that make up 
@@ -23,7 +23,7 @@ Current default values cause the program to create and sort integer arrays of le
 arrays of length 1,000,000 takes enough time to try the patience of anyone. Particularly the 
 insertion sort, with its Big-O(N2) running time.
 
-FOR THIS ASSIGNMENT 
+## FOR THIS ASSIGNMENT 
 
 Run the program and then answer the following questions:
 
@@ -42,5 +42,6 @@ For programming purposes and to think about further implementations, add Heap So
 program,and have results displayed in the same format as the other three sorts. You can use the 
 java's built in heap or use the one we created in the previous assignment.
 
-What to Hand In
+## WHAT TO HAND IN
+
 When you are finished, for the written questions, upload a text or MS Word document with your answers.
