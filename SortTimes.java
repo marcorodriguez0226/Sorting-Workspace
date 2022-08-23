@@ -21,7 +21,7 @@ public class SortTimes {
         long insertionSortTime = 0;
         long mergeSortTime = 0;
         long quickSortTime = 0;
-        long heapSortTime = 0;
+        long heapSortTime = 0; //Added
 
         System.out.println("Sorted ascending dataset");
         for (int arraysz = 10; arraysz < MAXARRAYSIZE; arraysz *= 10) {
@@ -31,6 +31,7 @@ public class SortTimes {
             quickSortTime = quickSort(sortedAsc);
             mergeSortTime = mergeSort(sortedAsc);
             insertionSortTime = insertionSort(sortedAsc);
+            heapSortTime = heapSort(sortedAsc); //Added
 
         }
 
@@ -43,6 +44,7 @@ public class SortTimes {
             quickSortTime = quickSort(sortedAsc);
             mergeSortTime = mergeSort(sortedAsc);
             insertionSortTime = insertionSort(sortedAsc);
+            heapSortTime = heapSort(sortedAsc); //Added
 
         }
 
@@ -55,6 +57,7 @@ public class SortTimes {
             quickSortTime = quickSort(randomNumbers);
             mergeSortTime = mergeSort(randomNumbers);
             insertionSortTime = insertionSort(randomNumbers);
+            heapSortTime = heapSort(randomNumbers); //Added
         }
     }
 
@@ -131,5 +134,21 @@ public class SortTimes {
 
         System.out.println("\t\tQuick Sort took " + (endTime - startTime));
         return (endTime - startTime);
+    }
+
+    //Added heapSort 
+    private static long heapSort(int[] src) {
+        int[] cpy = new int[src.length];
+        long startTime = 0;
+        long endTime = 0;
+        System.arraycopy(src, 0, cpy, 0, src.length);
+
+        startTime = System.nanoTime();
+        HeapSort.sort(cpy);
+        endTime = System.nanoTime();
+        
+        System.out.println("\t\tHeap Sort took " + (endTime - startTime));
+        return (endTime - startTime);
+
     }
 }
