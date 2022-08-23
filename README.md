@@ -25,6 +25,7 @@ Run the program and then answer the following questions:
 * Include a screenshot or the actual output of the program after you run it
 * Treat this as an experiment, not necessarily a programming exercise. 
 
+## OPTIONAL
 
 For programming purposes and to think about further implementations, add Heap Sort to the program,and have results displayed in the same format as the other three sorts. You can use the java's built in heap or use the one we created in the previous assignment.
 
