@@ -24,7 +24,7 @@ public class SortTimes {
         long heapSortTime = 0; //Added
 
         System.out.println("Sorted ascending dataset");
-        for (int arraysz = 10; arraysz < MAXARRAYSIZE; arraysz *= 10) {
+        for (int arraysz = 10; arraysz <= MAXARRAYSIZE; arraysz *= 10) {
             System.out.println("\tdataset size == " + arraysz);
             int[] sortedAsc = getAscendingValues(arraysz);
 
@@ -37,7 +37,7 @@ public class SortTimes {
 
         System.out.println("");
         System.out.println("Sorted descending dataset");
-        for (int arraysz = 10; arraysz < MAXARRAYSIZE; arraysz *= 10) {
+        for (int arraysz = 10; arraysz <= MAXARRAYSIZE; arraysz *= 10) {
             System.out.println("\tdataset size == " + arraysz);
             int[] sortedAsc = getDescendingValues(arraysz);
 
@@ -50,7 +50,7 @@ public class SortTimes {
 
         System.out.println("");
         System.out.println("Randomized dataset");
-        for (int arraysz = 10; arraysz < MAXARRAYSIZE; arraysz *= 10) {
+        for (int arraysz = 10; arraysz <= MAXARRAYSIZE; arraysz *= 10) {
             System.out.println("\tdataset size == " + arraysz);
             int[] randomNumbers = getRandomizedValues(arraysz);
 
