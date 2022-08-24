@@ -45,8 +45,109 @@ In the Insertion sort, it will always have the worst runtime in decending order 
 
 For programming purposes and to think about further implementations, add Heap Sort to the program,and have results displayed in the same format as the other three sorts. You can use the java's built in heap or use the one we created in the previous assignment.
 
-HeapSort: Since Heap Sort uses a maxheap, I predict that it will be fastest in descending order because all of the large numbers are on top and the smallest will be on bottom. It will be take less time than insertion sort because we will not have to do any comparisons. Merge sort will probably be better, just because heapify will have to do swaps, while merge sort it cuts the array in half and sorts both of them, and reconnects them together. Heap sort will take less time compared to quicksort. In a tier sort, from best to worst, it will be merge sort, heap sort, quick sort, and finally inssertion sort. 
+HeapSort: Since Heap Sort uses a maxheap, I predict that it will be fastest in descending order because all of the large numbers are on top and the smallest will be on bottom. It will be take less time than insertion sort because we will not have to do any comparisons. Merge sort will probably be better, just because heapify will have to do swaps, while merge sort it cuts the array in half and sorts both of them, and reconnects them together. Heap sort will take less time compared to quicksort. In a tier sort, from best to worst, it will be merge sort, heap sort, quick sort, and finally inssertion sort. According to the output when you have a large array that is randomized, the numbers are the largest compared to ascending and descending order. Insertion sort also takes the most amount of time when the data size is in the millions. However, it's hard to see a pattern in some of the results.As the size of the dataset increasees, merge sort and heap sort have very similar run times. One reason is that heap sort uses a heapify method to reorganize the tree, which takes time. Overall, the similarities between merge sort and heap sort is expected because both of them are O(nlogn) at worst case scenario. My output shows that merge sort is better than heap sort before a data size of 1000. However, after we pass that threshold, heap sort becomes faster than merge sort. I am guessing that it is because we are not using recursion in heapify, while merge sort uses recursion.
+
 
 ## WHAT TO HAND IN
 
 When you are finished, for the written questions, upload a text or MS Word document with your answers.
+
+marcorodriguez@Marcos-MacBook-Air Sorting Workspace %  /usr/bin/env /Library/Java/JavaVirtualMachines/temurin-17.jdk/Contents/Home/bin/java -agentlib:jdwp=t
+ransport=dt_socket,server=n,suspend=y,address=localhost:51102 -XX:+ShowCodeDetailsInExceptionMessages -cp /Users/marcorodriguez/Library/Application\ Support
+/Code/User/workspaceStorage/3ec1c7af69ecae80b7167f6f5f4b4977/redhat.java/jdt_ws/Sorting\ Workspace_da426a00/bin SortTimes 
+Sorted ascending dataset
+        dataset size == 10
+                Quick Sort took 721583
+                Merge Sort took 332875
+                Insertion Sort took 274083
+                Heap Sort took 5203209
+        dataset size == 100
+                Quick Sort took 35541
+                Merge Sort took 87875
+                Insertion Sort took 4084
+                Heap Sort took 85000
+        dataset size == 1000
+                Quick Sort took 351000
+                Merge Sort took 787292
+                Insertion Sort took 39000
+                Heap Sort took 2511500
+        dataset size == 10000
+                Quick Sort took 9286292
+                Merge Sort took 5168875
+                Insertion Sort took 371250
+                Heap Sort took 2151417
+        dataset size == 100000
+                Quick Sort took 6558250
+                Merge Sort took 13947250
+                Insertion Sort took 2617459
+                Heap Sort took 10375750
+        dataset size == 1000000
+                Quick Sort took 18361584
+                Merge Sort took 63633375
+                Insertion Sort took 1757709
+                Heap Sort took 59562542
+
+Sorted descending dataset
+        dataset size == 10
+                Quick Sort took 543042
+                Merge Sort took 332917
+                Insertion Sort took 80291
+                Heap Sort took 86041
+        dataset size == 100
+                Quick Sort took 97750
+                Merge Sort took 70917
+                Insertion Sort took 258541
+                Heap Sort took 49916
+        dataset size == 1000
+                Quick Sort took 476791
+                Merge Sort took 860333
+                Insertion Sort took 1737375
+                Heap Sort took 112500
+        dataset size == 10000
+                Quick Sort took 1471541
+                Merge Sort took 5459791
+                Insertion Sort took 80539208
+                Heap Sort took 1038459
+        dataset size == 100000
+                Quick Sort took 2088042
+                Merge Sort took 7911709
+                Insertion Sort took 2488735500
+                Heap Sort took 5811750
+        dataset size == 1000000
+                Quick Sort took 11675417
+                Merge Sort took 48118875
+                Insertion Sort took 263097409541
+                Heap Sort took 66367208
+
+Randomized dataset
+        dataset size == 10
+                Quick Sort took 7666
+                Merge Sort took 22833
+                Insertion Sort took 542
+                Heap Sort took 78042
+        dataset size == 100
+                Quick Sort took 6125
+                Merge Sort took 19458
+                Insertion Sort took 2625
+                Heap Sort took 3875
+        dataset size == 1000
+                Quick Sort took 59583
+                Merge Sort took 97500
+                Insertion Sort took 148208
+                Heap Sort took 120583
+        dataset size == 10000
+                Quick Sort took 675875
+                Merge Sort took 1106041
+                Insertion Sort took 13041709
+                Heap Sort took 696917
+        dataset size == 100000
+                Quick Sort took 7316584
+                Merge Sort took 13426000
+                Insertion Sort took 1272290083
+                Heap Sort took 8631500
+        dataset size == 1000000
+                Quick Sort took 81562000
+                Merge Sort took 145758709
+                Insertion Sort took 131475117625
+                Heap Sort took 137417167
+marcorodriguez@Marcos-MacBook-Air Sorting Workspace % 

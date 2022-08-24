@@ -1,28 +1,22 @@
 public class HeapSort {
-
     //sort 
-    public static int[] sort(int[] numbers) 
-    {
-        //for-loop heapifies the array and turns it into a max heap "tree"
-        for (int i = numbers.length / 2 - 1; i >= 0; i--) //start at the middle of the list
-        {
+    public static int[] sort(int[] numbers) {
+        //for-loop heapifies the array and turns it into a max heap "tree" and start at the middle of the list
+        for (int i = numbers.length / 2 - 1; i >= 0; i--) {
             heapify(numbers, i, numbers.length);
         }
 
         //for-loop that performs the sort by pushing large values to the end of the list
         //0 is not included because by the time we get there, the list is sorted
-        for(int i = numbers.length-1; i > 0; i--)
-        {
+        for(int i = numbers.length-1; i > 0; i--) {
             //swap the largest and smallest values
             int tmp = numbers[0];
             numbers[0] = numbers[i];
             numbers[i] = tmp;
 
             //reheapify the list
-            heapify(numbers, 0, i);
-            
+            heapify(numbers, 0, i);  
         }
-
         return numbers;
     }
 
