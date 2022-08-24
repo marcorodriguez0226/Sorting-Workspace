@@ -20,6 +20,7 @@ The three sorting algorithms are run one after another on arrays of increasing s
 Run the program and then answer the following questions:
 
 * Describe how each of the sort algorithms perform on each of the datasets compared to one another. What did you expect to see? How did that compare with the results?
+QuickSort: I would have thought that ascending and decending sorts would have had around the same runtime, while random would have taken the longeest because if you are using the midpoints of the array for a pivot, decending and ascending are going to have a similar pivot point. Therefore, you would be the least likely to pick an extreme such as the lowest and highest number. When you pick a random number, you could possibly pick the highest or lowest number in the array would cause the worst case runtime, which is O(n^2). Also, the size of the data set does impact the data runtime - the larger the data set, the lower the chance of picking either extrema. 
 * Describe how the run-time increases as the dataset size increases (telling me that it takes longer as the dataset increases is a guaranteed 0 for this question). Again, is this the expected result? Why might what you expected differ from what was seen?
 * Feel free to offer an explanation for the results (bug in the program, nature of randomized data, etc.).
 * Include a screenshot or the actual output of the program after you run it
